@@ -1,0 +1,43 @@
+{
+    "categorical": {
+        "HIGH": {"linecolor": "#cc00cc", "fillcolor": "#ee99ee", "linewidth": 3, "filled": true, "zorder": 6},
+         "MDT": {"linecolor": "#cc0000", "fillcolor": "#e06666", "linewidth": 3, "filled": true, "zorder": 5},
+         "ENH": {"linecolor": "#ff6600", "fillcolor": "#ffa366", "linewidth": 3, "filled": true, "zorder": 4},
+        "SLGT": {"linecolor": "#ddaa00", "fillcolor": "#ffe066", "linewidth": 3, "filled": true, "zorder": 3},
+        "MRGL": {"linecolor": "#005500", "fillcolor": "#66a366", "linewidth": 3, "filled": true, "zorder": 2},
+        "TSTM": {"linecolor": "#55bb55", "fillcolor": "#c1e9c1", "linewidth": 3, "filled": true, "zorder": 1}
+    },
+    "tornado": {
+         "60%": {"linecolor": "#104e8b", "fillcolor": "#104e8b", "linewidth": 3, "filled": true, "zorder": 6},
+         "45%": {"linecolor": "#912cee", "fillcolor": "#c896f7", "linewidth": 3, "filled": true, "zorder": 5},
+         "30%": {"linecolor": "#ff00ff", "fillcolor": "#ff80ff", "linewidth": 3, "filled": true, "zorder": 4},
+         "15%": {"linecolor": "#ff0000", "fillcolor": "#ff8080", "linewidth": 3, "filled": true, "zorder": 3},
+         "10%": {"linecolor": "#fd8a2b", "fillcolor": "#ffe481", "linewidth": 3, "filled": true, "zorder": 2},
+          "5%": {"linecolor": "#7f3f27", "fillcolor": "#bd998a", "linewidth": 3, "filled": true, "zorder": 1},
+          "2%": {"linecolor": "#1a731d", "fillcolor": "#79ba7a", "linewidth": 3, "filled": true, "zorder": 0},
+        "CIG1": {"linecolor": "#000000", "fillcolor": "#000000", "linewidth": 1, "filled": false, "zorder": 7},
+        "CIG2": {"linecolor": "#000000", "fillcolor": "#000000", "linewidth": 3, "filled": false, "zorder": 8},
+        "CIG3": {"linecolor": "#000000", "fillcolor": "#000000", "linewidth": 4, "filled": false, "zorder": 9}
+    },
+    "wind": {
+         "90%": {"linecolor": "#5c85d6", "fillcolor": "#1affff", "linewidth": 3, "filled": true, "zorder": 6},
+         "75%": {"linecolor": "#2952a3", "fillcolor": "#5c85d6", "linewidth": 3, "filled": true, "zorder": 5},
+         "60%": {"linecolor": "#912cee", "fillcolor": "#c895f6", "linewidth": 3, "filled": true, "zorder": 4},
+         "45%": {"linecolor": "#ff00ff", "fillcolor": "#ff7fff", "linewidth": 3, "filled": true, "zorder": 3},
+         "30%": {"linecolor": "#ff0000", "fillcolor": "#ff7f7f", "linewidth": 3, "filled": true, "zorder": 2},
+         "15%": {"linecolor": "#ff9600", "fillcolor": "#ffeb7f", "linewidth": 3, "filled": true, "zorder": 1},
+          "5%": {"linecolor": "#8b4726", "fillcolor": "#c5a392", "linewidth": 3, "filled": true, "zorder": 0},
+        "CIG1": {"linecolor": "#000000", "fillcolor": "#000000", "linewidth": 1, "filled": false, "zorder": 7},
+        "CIG2": {"linecolor": "#000000", "fillcolor": "#000000", "linewidth": 3, "filled": false, "zorder": 8},
+        "CIG3": {"linecolor": "#000000", "fillcolor": "#000000", "linewidth": 4, "filled": false, "zorder": 9}
+    },
+    "hail": {
+         "60%": {"linecolor": "#912cee", "fillcolor": "#c895f6", "linewidth": 3, "filled": true, "zorder": 4},
+         "45%": {"linecolor": "#ff00ff", "fillcolor": "#ff7fff", "linewidth": 3, "filled": true, "zorder": 3},
+         "30%": {"linecolor": "#ff0000", "fillcolor": "#ff7f7f", "linewidth": 3, "filled": true, "zorder": 2},
+         "15%": {"linecolor": "#ff9600", "fillcolor": "#ffeb7f", "linewidth": 3, "filled": true, "zorder": 1},
+          "5%": {"linecolor": "#8b4726", "fillcolor": "#c5a392", "linewidth": 3, "filled": true, "zorder": 0},
+        "CIG1": {"linecolor": "#000000", "fillcolor": "#000000", "linewidth": 1, "filled": false, "zorder": 7},
+        "CIG2": {"linecolor": "#000000", "fillcolor": "#000000", "linewidth": 3, "filled": false, "zorder": 8}
+    }
+}

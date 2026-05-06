@@ -1,0 +1,12 @@
+{
+    "autoIssueDate": false,
+    "autoValidDate": false,
+    "issueDate": "2027-04-24 16:21Z",
+    "validDate": "2027-04-24 16:30Z",
+    "generateCategorical": true,
+    "generateTornado": true,
+    "generateWind": true,
+    "generateHail": true,
+    "getForecasterFromUsername": false,
+    "forecaster": "Kerr/Leitman"
+}
