@@ -1,12 +1,14 @@
 {
     "autoIssueDate": false,
     "autoValidDate": false,
-    "issueDate": "2027-04-24 16:21Z",
-    "validDate": "2027-04-24 16:30Z",
+    "issueDate": "2011-04-27 16:29Z",
+    "validDate": "2011-04-27 16:30Z",
     "generateCategorical": true,
     "generateTornado": true,
     "generateWind": true,
     "generateHail": true,
     "getForecasterFromUsername": false,
-    "forecaster": "Kerr/Leitman"
+    "forecaster": "Broyles/Garner",
+    "use_custom_logo": false,
+    "custom_logo_fname": "logo.png"
 }

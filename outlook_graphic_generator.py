@@ -177,9 +177,11 @@ def plot_cig_contours(main_ax, contour_ax, data, type):
     except:
         print('No CIG3 to plot (or it errored)')
 
-plot_categorical()
-plot_tornado()
-plot_wind()
-plot_hail()
-#plt.show()
-#plt.savefig("TEST10.png",transparent=True)
+if config_data['generateCategorical']:
+    plot_categorical()
+if config_data['generateTornado']:
+    plot_tornado()
+if config_data['generateWind']:
+    plot_wind()
+if config_data['generateHail']:
+    plot_hail()

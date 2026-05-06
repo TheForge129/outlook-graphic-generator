@@ -10,14 +10,6 @@ import matplotlib.image as mpimg
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 styletable_path = os.path.join(SCRIPT_DIR,"styles.json")
 
-json_path = os.path.join(SCRIPT_DIR,"outlook.json")
-with open(json_path) as json_file:
-    outlook_data = json.loads(json_file.read())
-
-tor_data = outlook_data["forecastCycle"]["days"]["1"]["data"]["tornado"]
-wind_data = outlook_data["forecastCycle"]["days"]["1"]["data"]["wind"]
-hail_data = outlook_data["forecastCycle"]["days"]["1"]["data"]["hail"]
-
 cig1_hatch_path = os.path.join(SCRIPT_DIR,'img/cig1.png')
 cig2_hatch_path = os.path.join(SCRIPT_DIR,'img/cig2.png')
 cig3_hatch_path = os.path.join(SCRIPT_DIR,'img/cig3.png')
@@ -86,7 +78,7 @@ def plot_text(ax,metadata,type):
             f'Issued: {issue_date[11:13]}{issue_date[14:16]}Z {issue_date[5:7]}/{issue_date[8:10]}/{issue_date[0:4]}', 
             fontsize = 27.75, transform=ax.transAxes, fontname = 'Nunito', fontweight = 'regular')
     ax.text(114/1630,77/1110,
-            f'Valid: 1630Z Sun 04/24 - 1200Z Mon 04/25', #UPDATE LATER TO REFLECT ACTUAL VALID CYCLE
+            f'Valid: 1630Z Wed 04/27 - 1200Z Thu 04/28', #UPDATE LATER TO REFLECT ACTUAL VALID CYCLE
             fontsize = 27.75, transform=ax.transAxes, fontname = 'Nunito', fontweight = 'regular')
     ax.text(114/1630,39/1110,
             f'Forecaster: {forecaster}', 
