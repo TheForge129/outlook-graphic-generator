@@ -24,10 +24,10 @@ If double-clicking the file doesn't work, use outlook_graphic_generator.bat inst
 The script is rather cumbersome to use right now. I'm figuring that out; my apologies. User-friendly design has never been my strong suit.
 Additionally, I think it might be a federal crime to release the generated images on social media? I don't know. Be careful. There will be functionality in the future for a custom, non-NOAA logo, but I don't know when I'll get around to doing that.
 
-#TODO
--Add great salt lake (i couldn't find a good shapefile for it lmao)
--Filter risk contours to US borders
--"Probability too low"
--Fix issues with multiple nested CIG contours
--GUI?
--Days 2/3 plotting
+# TODO
+- Add great salt lake (i couldn't find a good shapefile for it lmao)
+- Filter risk contours to US borders
+- "Probability too low"
+- Fix issues with multiple nested CIG contours
+- GUI?
+- Days 2/3 plotting
