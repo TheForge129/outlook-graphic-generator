@@ -5,7 +5,6 @@ import matplotlib.image as mpimg
 #import cartopy.feature as cfeature
 import os
 #import cartopy.io.shapereader as shpreader
-import copy
 
 mpl.rcParams['figure.dpi'] = 72
 mpl.rcParams['savefig.dpi'] = 72
@@ -13,26 +12,6 @@ mpl.rcParams['savefig.dpi'] = 72
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 fill_img_path = os.path.join(SCRIPT_DIR,"img/basemap_fill.png")
 outline_img_path = os.path.join(SCRIPT_DIR,"img/basemap_outline.png")
-
-#states_file = os.path.join(SCRIPT_DIR,'shp/s_16ap26.shp')
-#states_reader = shpreader.Reader(states_file)
-#states_geoms = states_reader.geometries()
-#states_feature = cfeature.ShapelyFeature(states_geoms, ccrs.PlateCarree())
-
-#lakes_reservoirs_file = os.path.join(SCRIPT_DIR,'shp/b_cbrfc_display.shp')
-#lakes_reservoirs_reader = shpreader.Reader(lakes_reservoirs_file)
-#lakes_reservoirs_geoms = lakes_reservoirs_reader.geometries()
-#lakes_reservoirs_feature = cfeature.ShapelyFeature(lakes_reservoirs_geoms, ccrs.PlateCarree())
-
-#forecast_zones_file = os.path.join(SCRIPT_DIR,'shp/z_16ap26.shp')
-#forecast_zones_reader = shpreader.Reader(forecast_zones_file)
-#forecast_zones_geoms = forecast_zones_reader.geometries()
-#forecast_zones_feature = cfeature.ShapelyFeature(forecast_zones_geoms, ccrs.PlateCarree())
-
-#province_file = os.path.join(SCRIPT_DIR,'shp/province.shp')
-#province_reader = shpreader.Reader(province_file)
-#province_geoms = province_reader.geometries()
-#province_feature = cfeature.ShapelyFeature(province_geoms, ccrs.PlateCarree())
 
 def initialize_plot():
     global fig

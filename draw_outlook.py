@@ -1,24 +1,24 @@
-import matplotlib as mpl
 import json
 import os
 from matplotlib.patches import Polygon
 import cartopy.crs as ccrs
-import matplotlib.pyplot as plt
-import getpass
 import matplotlib.image as mpimg
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 styletable_path = os.path.join(SCRIPT_DIR,"styles.json")
+cfg_path = os.path.join(SCRIPT_DIR,"config.json")
 
 cig1_hatch_path = os.path.join(SCRIPT_DIR,'img/cig1.png')
 cig2_hatch_path = os.path.join(SCRIPT_DIR,'img/cig2.png')
 cig3_hatch_path = os.path.join(SCRIPT_DIR,'img/cig3.png')
 
-with open(styletable_path) as json_file:
-    styletables = json.loads(json_file.read())
-
+with open(styletable_path) as style_file:
+    styletables = json.loads(style_file.read())
+with open(cfg_path) as cfg_file:
+    cfg = json.loads(cfg_file.read())
+if cfg['override_60tor_colors']:
+    styletables['tornado']['60%'] = {"linecolor": "#104e8b", "fillcolor": "#3c76b0", "linewidth": 3, "filled": True, "zorder": 6}
 def plot_outlook(main_ax, contour_ax, data, type, risk, mask=None):
-    global tor_data, wind_data, hail_data
     styletable = styletables[type][risk]
     
     edgecolor = styletable['linecolor']; fillcolor = styletable['fillcolor']; linewidth = styletable['linewidth']; filled = styletable['filled']; zorder = styletable['zorder']

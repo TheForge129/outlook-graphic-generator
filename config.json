@@ -10,5 +10,6 @@
     "getForecasterFromUsername": false,
     "forecaster": "Broyles/Garner",
     "use_custom_logo": false,
-    "custom_logo_fname": "logo.png"
+    "custom_logo_fname": "logo.png",
+    "override_60tor_colors": false
 }
