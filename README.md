@@ -2,7 +2,7 @@
 A tool to create SPC-like convective outlook graphics using Graphical Forecast Creator JSON files.
 
 # Installation
-If using the executable bundle, you don't need anything else (other than the three json files).
+If using the executable bundle (NOT CURRENTLY RECOMMENDED), you don't need anything else (other than the three json files).
 If running from source, you need at least Python 3.10. Once you have installed Python, install the "cartopy" library; all other dependencies should come with it. On windows, use "pip install cartopy" (no quotes) in command prompt or powershell. A batch script has been provided ("install_dependencies.bat") to do this for you if computers are too scary.  If you're on Linux, you probably don't need my help (hell, you probably already have all the requirements); if you're on Mac, good luck. You're on your own.
 
 # Usage
