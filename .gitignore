@@ -1,3 +1,6 @@
 __pycache__/
 *.png
 bleh.txt
+*.spec
+build/
+dist/
