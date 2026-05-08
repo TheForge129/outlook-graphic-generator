@@ -12,14 +12,6 @@ import cig_handler
 mpl.rcParams['figure.dpi'] = 72
 mpl.rcParams['savefig.dpi'] = 72
 
-###################################
-
-# TODO: ADD SALT LAKE TO BOUNDARIES
-
-# TODO: FILTER CONTOURS TO US BORDERS + ~20 MILES
-
-###################################
-
 tor_cig_plotted_flag = False
 wind_cig_plotted_flag = False
 hail_cig_plotted_flag = False
