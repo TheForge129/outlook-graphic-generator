@@ -29,5 +29,6 @@ Additionally, I think it might be a federal crime to release the generated image
 - Filter risk contours to US borders
 - "Probability too low"
 - Fix issues with multiple nested CIG contours
-- GUI?
 - Days 2/3 plotting
+- GUI?
+- Old format?
