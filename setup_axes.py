@@ -23,10 +23,10 @@ def initialize_plot():
     
     proj = ccrs.LambertConformal()
 
-    main_ax = fig.add_axes([0, 0, 1, 1], projection=proj, zorder=0)
+    main_ax = fig.add_axes((0, 0, 1, 1), projection=proj, zorder=0)
     main_ax.patch.set_alpha(0)
     
-    contour_ax = fig.add_axes([0, 0, 1, 1], projection=proj, zorder=2)
+    contour_ax = fig.add_axes((0, 0, 1, 1), projection=proj, zorder=2)
     contour_ax.patch.set_alpha(0)
     
     fig.patch.set_color('#729fcf')

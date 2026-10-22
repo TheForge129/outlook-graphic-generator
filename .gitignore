@@ -4,3 +4,6 @@ bleh.txt
 *.spec
 build/
 dist/
+outlooks/
+*.zip
+.vscode/

@@ -9,6 +9,8 @@ import setup_axes
 import draw_outlook
 import cig_handler
 
+import sys
+
 mpl.rcParams['figure.dpi'] = 72
 mpl.rcParams['savefig.dpi'] = 72
 
@@ -24,6 +26,18 @@ cat_legend_path = os.path.join(SCRIPT_DIR,"img/categorical_legend.png")
 tor_legend_path = os.path.join(SCRIPT_DIR,"img/tornado_legend.png")
 wind_legend_path = os.path.join(SCRIPT_DIR,"img/wind_legend.png")
 hail_legend_path = os.path.join(SCRIPT_DIR,"img/hail_legend.png")
+
+if len(sys.argv) > 1:
+    pass #bleh
+else:
+    #TODO: run with arguments
+    
+    ##raise Exception('This script must be run with arguments.\n\n' +
+    ##                'Please re-run the script using this helpful format guide:\n' + 
+    ##                'outlook_graphic_generator.py <<JSON FILENAME>>'
+    ##      ''
+    ##      )
+    pass
 
 with open(json_path) as json_file:
     outlook_data = json.loads(json_file.read())

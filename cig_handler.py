@@ -1,4 +1,5 @@
 import shapely
+import draw_outlook
 
 def create_cig_polys(data):
     cig3_poly_coords = []; cig3_polys = []
@@ -9,19 +10,20 @@ def create_cig_polys(data):
         match type:
             case 'CIG1':
                 for bleh in entry[1]:
-                    cig1_poly_coords.append(bleh['geometry']['coordinates'][0])
+                    cig1_poly_coords.append(draw_outlook.clip_outlook_geom(bleh['geometry']['coordinates'][0]))
             case 'CIG2':
                 for bleh in entry[1]:
-                    cig2_poly_coords.append(bleh['geometry']['coordinates'][0])
+                    cig2_poly_coords.append(draw_outlook.clip_outlook_geom(bleh['geometry']['coordinates'][0]))
             case 'CIG3':
                 for bleh in entry[1]:
-                    cig3_poly_coords.append(bleh['geometry']['coordinates'][0])
+                    cig3_poly_coords.append(draw_outlook.clip_outlook_geom(bleh['geometry']['coordinates'][0]))
+    
     for fuck in cig1_poly_coords:
-        cig1_polys.append(shapely.Polygon(fuck))
+        cig1_polys.append(shapely.Polygon(fuck).buffer(0))
     for fuck in cig2_poly_coords:
-        cig2_polys.append(shapely.Polygon(fuck))
+        cig2_polys.append(shapely.Polygon(fuck).buffer(0))
     for fuck in cig3_poly_coords:
-        cig3_polys.append(shapely.Polygon(fuck))
+        cig3_polys.append(shapely.Polygon(fuck).buffer(0))
 
     if cig2_polys != []:
         for cig1_polygon in cig1_polys:
