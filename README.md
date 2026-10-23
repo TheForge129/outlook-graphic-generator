@@ -6,18 +6,15 @@ If using the executable bundle (NOT CURRENTLY RECOMMENDED), you don't need anyth
 If running from source, you need at least Python 3.10. Once you have installed Python, install the "cartopy" library; all other dependencies should come with it. On windows, use "pip install cartopy" (no quotes) in command prompt or powershell. A batch script has been provided ("install_dependencies.bat") to do this for you if computers are too scary.  If you're on Linux, you probably don't need my help (hell, you probably already have all the requirements); if you're on Mac, good luck. You're on your own.
 
 # Usage
-In order to use the script, you need to do (as of now) three things:
+In order to use the script, you need to do (as of now) two things:
 1. Set up the outlook
 2. Edit config.json
-3. Set the valid cycle in draw_outlook.py (temporary)
 
 Setting up the outlook is relatively easy. Go to https://gfc.weatherboysuper.com/forecast, create a forecast outlook, and then save it with the name "outlook.json". Place the file into the directory where you have the repository installed; replace if necessary.
 (NOTE: if using the binary, you need to put the outlook.json in the "_internal" directory.)
 A template outlook.json has been provided because why not.
 
-Editing config.json isn't too big an issue. Most of the options should be self-explanatory. It is worth mentioning that currently, the program has no way to automatically regenerate the JSON should something go awry; if the file gets messed up, you're going to have to redownload it from this repository. Also note that currently the custom logo options and the valid date options don't do anything. I have yet to go through the nightmare hell torture of learning the datetime library.
-
-Setting the valid cycle is the most annoying part. Open draw_outlook.py in a text editor, and head to line 81. There should be a string that says 'Valid: 1630Z Wed 04/27 - 1200Z Thu 04/28'. Change that to whatever time period your outlook is valid for. Note that if anything outside the quotes is changed, the program is very likely to crash. I am not responsible for any issues that arise from modifying the script. This will not be necessary in a future release, but I'm too lazy to do it at the moment.
+Editing config.json isn't too big an issue. Most of the options should be self-explanatory. It is worth mentioning that currently, the program has no way to automatically regenerate the JSON should something go awry; if the file gets messed up, you're going to have to redownload it from this repository. Also note that currently the custom logo option doesn't do anything.
 
 Once you have all of that done, you should be able to run the script, either from the .exe or the "outlook_graphic_generator.py" file. If you're running the script,. It will output up to four PNG files, depending on what is specified in the config. If double-clicking the file doesn't work, use outlook_graphic_generator.bat instead.
 
@@ -27,9 +24,10 @@ Additionally, I think it might be a federal crime to release the generated image
 
 # TODO
 - Add great salt lake (i couldn't find a good shapefile for it lmao)
-- Filter risk contours to US borders
 - "Probability too low"
 - Fix issues with multiple nested CIG contours
 - Days 2/3 plotting
 - GUI?
 - Old format?
+- geojson importing
+- PWOs?
